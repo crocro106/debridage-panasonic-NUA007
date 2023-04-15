@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 643BE5D3
+P 1570 3560
+F 0 "J1" H 1570 3300 50  0000 C CNN
+F 1 "Alim + Phares" H 1790 3360 50  0000 C CNN
+F 2 "" H 1570 3560 50  0001 C CNN
+F 3 "~" H 1570 3560 50  0001 C CNN
+	1    1570 3560
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 643C176F
+P 2980 5230
+F 0 "#PWR?" H 2980 4980 50  0001 C CNN
+F 1 "GND" H 2985 5057 50  0000 C CNN
+F 2 "" H 2980 5230 50  0001 C CNN
+F 3 "" H 2980 5230 50  0001 C CNN
+	1    2980 5230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2980 5230 2980 5170
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 643D9460
+P 1970 4770
+F 0 "J2" H 1970 4900 50  0000 C CNN
+F 1 "Vers ILS" H 1980 4560 50  0000 C CNN
+F 2 "" H 1970 4770 50  0001 C CNN
+F 3 "~" H 1970 4770 50  0001 C CNN
+	1    1970 4770
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2170 4670 2380 4670
+$Comp
+L MCU_Microchip_PIC12:PIC12HV615-IP U1
+U 1 1 643BF6D7
+P 2980 4570
+F 0 "U1" H 2980 4590 50  0000 C CNN
+F 1 "PIC12HV615-IP" H 2980 4400 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3580 5220 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41302D.pdf" H 2980 4570 50  0001 C CNN
+	1    2980 4570
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 643DFE19
+P 2170 4380
+F 0 "R2" H 1970 4440 50  0000 L CNN
+F 1 "100K" H 1910 4370 50  0000 L CNN
+F 2 "" V 2100 4380 50  0001 C CNN
+F 3 "~" H 2170 4380 50  0001 C CNN
+	1    2170 4380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2170 4530 2170 4670
+Connection ~ 2170 4670
+$Comp
+L power:GND #PWR?
+U 1 1 643E3CE9
+P 2170 4880
+F 0 "#PWR?" H 2170 4630 50  0001 C CNN
+F 1 "GND" H 2175 4707 50  0000 C CNN
+F 2 "" H 2170 4880 50  0001 C CNN
+F 3 "" H 2170 4880 50  0001 C CNN
+	1    2170 4880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2170 4880 2170 4770
+$Comp
+L Device:R R4
+U 1 1 643FEDCF
+P 4300 4670
+F 0 "R4" V 4200 4630 50  0000 C CNN
+F 1 "68K" V 4300 4670 50  0000 C CNN
+F 2 "" V 4230 4670 50  0001 C CNN
+F 3 "~" H 4300 4670 50  0001 C CNN
+	1    4300 4670
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 643FF081
+P 3660 4820
+F 0 "R3" H 3730 4866 50  0000 L CNN
+F 1 "18K" V 3660 4760 50  0000 L CNN
+F 2 "" V 3590 4820 50  0001 C CNN
+F 3 "~" H 3660 4820 50  0001 C CNN
+	1    3660 4820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3580 4670 3660 4670
+Wire Wire Line
+	3660 4970 3660 5170
+Wire Wire Line
+	3660 5170 2980 5170
+Connection ~ 2980 5170
+Connection ~ 3660 4670
+Wire Wire Line
+	4560 4670 4560 5460
+Wire Wire Line
+	1790 5460 1790 3660
+Wire Wire Line
+	1770 3660 1790 3660
+Wire Wire Line
+	4450 4670 4560 4670
+$Comp
+L Device:R R3
+U 1 1 644169D0
+P 4300 4570
+F 0 "R3" V 4210 4570 50  0000 C CNN
+F 1 "1K" V 4290 4570 50  0000 C CNN
+F 2 "" V 4230 4570 50  0001 C CNN
+F 3 "~" H 4300 4570 50  0001 C CNN
+	1    4300 4570
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 64418A2A
+P 4690 4820
+F 0 "R5" H 4760 4866 50  0000 L CNN
+F 1 "100K" V 4690 4730 50  0000 L CNN
+F 2 "" V 4620 4820 50  0001 C CNN
+F 3 "~" H 4690 4820 50  0001 C CNN
+	1    4690 4820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4570 4690 4570
+Wire Wire Line
+	4690 4570 4690 4670
+$Comp
+L Transistor_FET:BS170 Q?
+U 1 1 6441A0E5
+P 4960 4570
+F 0 "Q?" H 5164 4616 50  0000 L CNN
+F 1 "BS170" H 5164 4525 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5160 4495 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4960 4570 50  0001 L CNN
+	1    4960 4570
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4760 4570 4690 4570
+Connection ~ 4690 4570
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 64420400
+P 5550 4370
+F 0 "J3" H 5660 4320 50  0000 C CNN
+F 1 "Vers controleur" H 5290 4500 50  0000 C CNN
+F 2 "" H 5550 4370 50  0001 C CNN
+F 3 "~" H 5550 4370 50  0001 C CNN
+	1    5550 4370
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5060 4370 5350 4370
+$Comp
+L Device:D_Zener D1
+U 1 1 64424A0E
+P 3940 4820
+F 0 "D1" V 3960 4940 50  0000 C CNN
+F 1 "1N750 4,7V" V 4050 5100 50  0000 C CNN
+F 2 "" H 3940 4820 50  0001 C CNN
+F 3 "~" H 3940 4820 50  0001 C CNN
+	1    3940 4820
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3660 4670 3940 4670
+Wire Wire Line
+	3940 4670 4150 4670
+Connection ~ 3940 4670
+Wire Wire Line
+	3580 4570 4150 4570
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 64451264
+P 3790 3830
+F 0 "J4" V 3754 3542 50  0000 R CNN
+F 1 "Prog" V 3663 3542 50  0000 R CNN
+F 2 "" H 3790 3830 50  0001 C CNN
+F 3 "~" H 3790 3830 50  0001 C CNN
+	1    3790 3830
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3590 4030 3590 4470
+Wire Wire Line
+	3590 4470 3580 4470
+Wire Wire Line
+	3690 4030 3690 4200
+Wire Wire Line
+	3690 4200 3460 4200
+$Comp
+L power:GND #PWR?
+U 1 1 6445FED3
+P 3790 4080
+F 0 "#PWR?" H 3790 3830 50  0001 C CNN
+F 1 "GND" H 3795 3907 50  0000 C CNN
+F 2 "" H 3790 4080 50  0001 C CNN
+F 3 "" H 3790 4080 50  0001 C CNN
+	1    3790 4080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3790 4030 3790 4080
+Wire Wire Line
+	3890 4030 3890 4200
+Wire Wire Line
+	3890 4200 4580 4200
+Wire Wire Line
+	4580 4200 4580 3180
+Wire Wire Line
+	4580 3180 920  3180
+Wire Wire Line
+	920  3180 920  4030
+Wire Wire Line
+	2380 4030 2380 4470
+Wire Wire Line
+	2380 4580 2290 4580
+Wire Wire Line
+	2290 4580 2290 4100
+Wire Wire Line
+	2290 4100 840  4100
+Wire Wire Line
+	840  4100 840  3130
+Wire Wire Line
+	840  3130 4630 3130
+Wire Wire Line
+	4630 3130 4630 4140
+Wire Wire Line
+	4630 4140 3990 4140
+Wire Wire Line
+	3990 4140 3990 4030
+Wire Wire Line
+	920  4030 2380 4030
+$Comp
+L power:GND #PWR?
+U 1 1 6447C15F
+P 4690 5030
+F 0 "#PWR?" H 4690 4780 50  0001 C CNN
+F 1 "GND" H 4695 4857 50  0000 C CNN
+F 2 "" H 4690 5030 50  0001 C CNN
+F 3 "" H 4690 5030 50  0001 C CNN
+	1    4690 5030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1790 5460 4560 5460
+Wire Wire Line
+	5070 4760 5070 5020
+Wire Wire Line
+	5070 5020 4690 5020
+Wire Wire Line
+	4690 4970 4690 5020
+Connection ~ 4690 5020
+Wire Wire Line
+	4690 5020 4690 5030
+Wire Wire Line
+	3940 4970 3940 5170
+Wire Wire Line
+	3940 5170 3660 5170
+Connection ~ 3660 5170
+Wire Wire Line
+	2590 3460 2350 3460
+Connection ~ 2590 3460
+$Comp
+L Device:CP C?
+U 1 1 643CDAE4
+P 2590 3610
+F 0 "C?" H 2472 3564 50  0000 R CNN
+F 1 "CP" H 2472 3655 50  0000 R CNN
+F 2 "" H 2628 3460 50  0001 C CNN
+F 3 "~" H 2590 3610 50  0001 C CNN
+	1    2590 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 643C31DE
+P 1980 3670
+F 0 "#PWR?" H 1980 3420 50  0001 C CNN
+F 1 "GND" H 2090 3690 50  0000 C CNN
+F 2 "" H 1980 3670 50  0001 C CNN
+F 3 "" H 1980 3670 50  0001 C CNN
+	1    1980 3670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 643C0DAF
+P 2200 3460
+F 0 "R1" V 2100 3460 50  0000 C CNN
+F 1 "22K" V 2200 3470 50  0000 C CNN
+F 2 "" V 2130 3460 50  0001 C CNN
+F 3 "~" H 2200 3460 50  0001 C CNN
+	1    2200 3460
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1770 3460 2050 3460
+Wire Wire Line
+	2170 4230 2170 3960
+Wire Wire Line
+	2170 3960 2980 3960
+Connection ~ 2980 3960
+Wire Wire Line
+	2980 3960 2980 3970
+Wire Wire Line
+	2590 3760 2260 3760
+Wire Wire Line
+	2260 3760 2260 3560
+Wire Wire Line
+	1980 3670 1980 3560
+Wire Wire Line
+	1770 3560 1980 3560
+Connection ~ 1980 3560
+Wire Wire Line
+	1980 3560 2260 3560
+Wire Wire Line
+	2980 3460 2980 3960
+Wire Wire Line
+	3460 3460 2980 3460
+Wire Wire Line
+	3460 3460 3460 4200
+Connection ~ 2980 3460
+Text Label 3150 3460 0    50   ~ 0
+VDD
+Text Label 990  3680 0    50   ~ 0
+Bouton_Phare
+Text Label 1890 3460 0    50   ~ 0
+VBatt
+Wire Wire Line
+	2590 3460 2980 3460
+Wire Wire Line
+	5360 4470 5360 5020
+Wire Wire Line
+	5360 5020 5070 5020
+Connection ~ 5070 5020
+$EndSCHEMATC
