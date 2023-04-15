@@ -1,0 +1,292 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"178 ../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 178:     struct {
+[s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S6 . GP0 GP1 GP2 GP3 GP4 GP5 ]
+"186
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 186:     struct {
+[s S7 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S7 . GPIO0 GPIO1 GPIO2 GPIO3 GPIO4 GPIO5 ]
+"194
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 194:     struct {
+[s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S8 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"177
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 177: typedef union {
+[u S5 `S6 1 `S7 1 `S8 1 ]
+[n S5 . . . . ]
+"203
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 203: extern volatile GPIObits_t GPIObits __attribute__((address(0x005)));
+[v _GPIObits `VS5 ~T0 @X0 0 e@5 ]
+"430
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 430:     struct {
+[s S14 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S14 . GPIF INTF TMR0IF GPIE INTE TMR0IE PEIE GIE ]
+"440
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 440:     struct {
+[s S15 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S15 . . T0IF . T0IE ]
+"429
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 429: typedef union {
+[u S13 `S14 1 `S15 1 ]
+[n S13 . . . ]
+"447
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 447: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS13 ~T0 @X0 0 e@11 ]
+"8 /opt/microchip/xc8/v2.31/pic/include/builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+[p mainexit ]
+"2036 ../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 2036: extern volatile unsigned char ANSEL __attribute__((address(0x09F)));
+[v _ANSEL `Vuc ~T0 @X0 0 e@159 ]
+"167
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 167: extern volatile unsigned char GPIO __attribute__((address(0x005)));
+[v _GPIO `Vuc ~T0 @X0 0 e@5 ]
+"1408
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1408: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"13 main.c
+[p x FOSC  =  INTOSCIO   ]
+"14
+[p x WDTE  =  OFF        ]
+"15
+[p x PWRTE  =  OFF       ]
+"16
+[p x MCLRE  =  ON        ]
+"17
+[p x CP  =  OFF          ]
+"18
+[p x IOSCFS  =  8MHZ     ]
+"19
+[p x BOREN  =  OFF       ]
+"55 ../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 55: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"62
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 62: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"69
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 69: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"76
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 76: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"162
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 162: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"169
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 169: __asm("GPIO equ 05h");
+[; <" GPIO equ 05h ;# ">
+"174
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 174: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"419
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 419: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"426
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 426: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"504
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 504: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"578
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 578: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"585
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 585: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"592
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 592: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"599
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 599: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"670
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 670: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"677
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 677: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"753
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 753: __asm("CCPR1 equ 013h");
+[; <" CCPR1 equ 013h ;# ">
+"760
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 760: __asm("CCPR1L equ 013h");
+[; <" CCPR1L equ 013h ;# ">
+"767
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 767: __asm("CCPR1H equ 014h");
+[; <" CCPR1H equ 014h ;# ">
+"774
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 774: __asm("CCP1CON equ 015h");
+[; <" CCP1CON equ 015h ;# ">
+"845
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 845: __asm("PWM1CON equ 016h");
+[; <" PWM1CON equ 016h ;# ">
+"915
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 915: __asm("ECCPAS equ 017h");
+[; <" ECCPAS equ 017h ;# ">
+"997
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 997: __asm("VRCON equ 019h");
+[; <" VRCON equ 019h ;# ">
+"1084
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1084: __asm("CMCON0 equ 01Ah");
+[; <" CMCON0 equ 01Ah ;# ">
+"1184
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1184: __asm("CMCON1 equ 01Ch");
+[; <" CMCON1 equ 01Ch ;# ">
+"1238
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1238: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1245
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1245: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1335
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1335: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1405
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1405: __asm("TRISIO equ 085h");
+[; <" TRISIO equ 085h ;# ">
+"1410
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1410: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1503
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1503: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1577
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1577: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1611
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1611: __asm("OSCTUNE equ 090h");
+[; <" OSCTUNE equ 090h ;# ">
+"1663
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1663: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1670
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1670: __asm("APFCON equ 093h");
+[; <" APFCON equ 093h ;# ">
+"1703
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1703: __asm("WPU equ 095h");
+[; <" WPU equ 095h ;# ">
+"1708
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1708: __asm("WPUA equ 095h");
+[; <" WPUA equ 095h ;# ">
+"1857
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1857: __asm("IOC equ 096h");
+[; <" IOC equ 096h ;# ">
+"1862
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 1862: __asm("IOCA equ 096h");
+[; <" IOCA equ 096h ;# ">
+"2031
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 2031: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2038
+[; ;../../../../../opt/microchip/xc8/v2.31/pic/include/proc/pic12hv615.h: 2038: __asm("ANSEL equ 09Fh");
+[; <" ANSEL equ 09Fh ;# ">
+"23 main.c
+[; ;main.c: 23: volatile unsigned char cmpt=0;
+[v _cmpt `Vuc ~T0 @X0 1 e ]
+[i _cmpt
+-> -> 0 `i `uc
+]
+[v $root$_my_isr `(v ~T0 @X0 0 e ]
+"25
+[; ;main.c: 25: void __attribute__((picinterrupt(("")))) my_isr()
+[v _my_isr `(v ~T1 @X0 1 ef ]
+"26
+[; ;main.c: 26: {
+{
+[e :U _my_isr ]
+[f ]
+"27
+[; ;main.c: 27:     cmpt++;
+[e ++ _cmpt -> -> 1 `i `Vuc ]
+"28
+[; ;main.c: 28:     if(cmpt%2)
+[e $ ! != % -> _cmpt `i -> 2 `i -> 0 `i 84  ]
+"29
+[; ;main.c: 29:     {
+{
+"30
+[; ;main.c: 30:         GPIObits.GP4=1;
+[e = . . _GPIObits 0 4 -> -> 1 `i `uc ]
+"31
+[; ;main.c: 31:     }
+}
+[e $U 85  ]
+"32
+[; ;main.c: 32:     else
+[e :U 84 ]
+"33
+[; ;main.c: 33:     {
+{
+"34
+[; ;main.c: 34:         GPIObits.GP4=0;
+[e = . . _GPIObits 0 4 -> -> 0 `i `uc ]
+"35
+[; ;main.c: 35:     }
+}
+[e :U 85 ]
+"36
+[; ;main.c: 36:     INTCONbits.INTF=0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"37
+[; ;main.c: 37:     __asm("sleep");
+[; <" sleep ;# ">
+"38
+[; ;main.c: 38:     __nop();
+[e ( ___nop ..  ]
+"39
+[; ;main.c: 39: }
+[e :UE 83 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"42
+[; ;main.c: 42: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"43
+[; ;main.c: 43:     ANSEL=0;
+[e = _ANSEL -> -> 0 `i `uc ]
+"44
+[; ;main.c: 44:     GPIO=0;
+[e = _GPIO -> -> 0 `i `uc ]
+"45
+[; ;main.c: 45:     TRISA=0x04;
+[e = _TRISA -> -> 4 `i `uc ]
+"46
+[; ;main.c: 46:     INTCONbits.INTE=1;
+[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
+"47
+[; ;main.c: 47:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"48
+[; ;main.c: 48:     __asm("sleep");
+[; <" sleep ;# ">
+"49
+[; ;main.c: 49:     __nop();
+[e ( ___nop ..  ]
+"50
+[; ;main.c: 50:     for(;;)
+{
+[e :U 87 ]
+"51
+[; ;main.c: 51:     {
+{
+"52
+[; ;main.c: 52:     }
+}
+[e $U 87  ]
+[e :U 88 ]
+}
+"53
+[; ;main.c: 53:     return;
+[e $UE 86  ]
+"54
+[; ;main.c: 54: }
+[e :UE 86 ]
+}
